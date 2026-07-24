@@ -1,0 +1,10 @@
+:root {
+    --toolbar-bgcolor: #0f1722 !important;
+    --toolbar-color: #c3c5c7 !important;
+
+    --lwt-accent-color: #0f1722 !important;
+    --lwt-text-color: #c3c5c7 !important;
+
+    --tab-selected-bgcolor: #B43644 !important;
+    --tab-selected-textcolor: #c3c5c7 !important;
+}

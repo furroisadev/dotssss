@@ -1,0 +1,14 @@
+{
+    "editor.tokenColorCustomizations": {
+       "functions":    "#4B5466", 
+        "keywords":     "#5A5761",
+        "numbers":      "#A0081A", 
+        "strings":      "#B43644", 
+        "types":        "#976868", 
+        "variables":    "#A1769F", 
+        "comments":     "#5e6773"
+    },
+    "workbench.colorCustomizations": {
+        "editor.background": "#0f1722"
+    }
+}

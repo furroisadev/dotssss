@@ -1,0 +1,21 @@
+set $wallpaper /home/furro/Pictures/wallpapers/wallpaper.jpg
+
+set $background #0f1722
+set $foreground #c3c5c7
+
+set $color0 #0f1722
+set $color1 #4B5466
+set $color2 #5A5761
+set $color3 #A0081A
+set $color4 #B43644
+set $color5 #976868
+set $color6 #A1769F
+set $color7 #c3c5c7
+set $color8 #5e6773
+set $color9 #4B5466
+set $color10 #5A5761
+set $color11 #A0081A
+set $color12 #B43644
+set $color13 #976868
+set $color14 #A1769F
+set $color15 #c3c5c7

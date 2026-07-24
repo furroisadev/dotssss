@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/furro/Pictures/wallpapers/wallpaper.jpg"
+let background = "#0f1722"
+let foreground = "#c3c5c7"
+let cursor     = "#c3c5c7"
+
+" Colors
+let color0  = "#0f1722"
+let color1  = "#4B5466"
+let color2  = "#5A5761"
+let color3  = "#A0081A"
+let color4  = "#B43644"
+let color5  = "#976868"
+let color6  = "#A1769F"
+let color7  = "#c3c5c7"
+let color8  = "#5e6773"
+let color9  = "#4B5466"
+let color10 = "#5A5761"
+let color11 = "#A0081A"
+let color12 = "#B43644"
+let color13 = "#976868"
+let color14 = "#A1769F"
+let color15 = "#c3c5c7"

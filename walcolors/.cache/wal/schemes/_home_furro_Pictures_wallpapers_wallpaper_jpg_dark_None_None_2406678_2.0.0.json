@@ -1,0 +1,28 @@
+{
+    "checksum": "ccf5d06767a44031bf9704788a1a3e94",
+    "wallpaper": "/home/furro/Pictures/wallpapers/wallpaper.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c121c",
+        "foreground": "#c2c3c6",
+        "cursor": "#c2c3c6"
+    },
+    "colors": {
+        "color0": "#0c121c",
+        "color1": "#5B565A",
+        "color2": "#A46944",
+        "color3": "#A06A5B",
+        "color4": "#C89F6B",
+        "color5": "#DB9E68",
+        "color6": "#70778E",
+        "color7": "#c2c3c6",
+        "color8": "#5b6170",
+        "color9": "#5B565A",
+        "color10": "#A46944",
+        "color11": "#A06A5B",
+        "color12": "#C89F6B",
+        "color13": "#DB9E68",
+        "color14": "#70778E",
+        "color15": "#c2c3c6"
+    }
+}
