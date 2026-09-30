@@ -84,13 +84,13 @@ frame-opacity = 0.7;
 active-opacity = 0.90;
 inactive-opacity = 0.70;
 frame-opacity = 1.0;
-# TRANSPARENCY_OFF opacity-rule = [
-# TRANSPARENCY_OFF   "100:class_g = 'steamwebhelper'",
-# TRANSPARENCY_OFF   "100:class_g = 'steam'",
-# TRANSPARENCY_OFF   "100:class_g = 'org.vinegarhq.Sober'",
-# TRANSPARENCY_OFF   "100:class_g = 'firefox-esr'",
-# TRANSPARENCY_OFF   "100:class_g = 'steam_app_1551360'"
-# TRANSPARENCY_OFF ];
+opacity-rule = [
+  "100:class_g = 'steamwebhelper'",
+  "100:class_g = 'steam'",
+  "100:class_g = 'org.vinegarhq.Sober'",
+  "100:class_g = 'firefox-esr'",
+  "100:class_g = 'steam_app_1551360'"
+];
 
 # Use fixed inactive dim value, instead of adjusting according to window opacity.
 #
