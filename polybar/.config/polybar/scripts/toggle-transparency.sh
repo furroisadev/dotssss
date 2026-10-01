@@ -1,19 +1,19 @@
+```bash
 #!/bin/bash
 
-CONFIG="$HOME/.config/picom/picom.conf"
-BACKUP="$HOME/.config/picom/picom.conf.normal"
+WINDOW=$(xdotool getactivewindow)
 
-if [ ! -f "$BACKUP" ]; then
-    cp "$CONFIG" "$BACKUP"
-fi
+# Get current opacity
+CURRENT=$(xprop -id "$WINDOW" _NET_WM_WINDOW_OPACITY | awk '{print $NF}')
 
-if grep -q '^# TRANSPARENCY_OFF' "$CONFIG"; then
-    cp "$BACKUP" "$CONFIG"
+# 100% opacity = 0xffffffff
+if [ "$CURRENT" = "4294967295" ] || [ -z "$CURRENT" ]; then
+    # Set to 85% opacity
+    xprop -id "$WINDOW" -f _NET_WM_WINDOW_OPACITY 32c \
+        -set _NET_WM_WINDOW_OPACITY 3650722201
 else
-    cp "$BACKUP" "$CONFIG"
-
-    sed -i '/^opacity-rule =/,/^];/s/^/# TRANSPARENCY_OFF /' "$CONFIG"
+    # Set to 100% opacity
+    xprop -id "$WINDOW" -f _NET_WM_WINDOW_OPACITY 32c \
+        -set _NET_WM_WINDOW_OPACITY 4294967295
 fi
-
-pkill picom
-picom --config "$CONFIG" -b
+```
