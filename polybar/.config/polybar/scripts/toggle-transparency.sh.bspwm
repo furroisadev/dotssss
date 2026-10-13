@@ -1,0 +1,19 @@
+#!/bin/bash
+
+WINDOW=$(bspc query -N -n focused)
+[ -z "$WINDOW" ] && exit 1
+
+PROP="_NET_WM_WINDOW_OPACITY"
+FULL="4294967295"
+PARTIAL="3650722201"
+
+CURRENT=$(xprop -id "$WINDOW" "$PROP" 2>/dev/null |
+    awk -F'= ' '{print $2}' | tr -d ' ')
+
+if [ "$CURRENT" = "$PARTIAL" ]; then
+    # Fully opaque
+    xprop -id "$WINDOW" -f "$PROP" 32c -set "$PROP" "$FULL"
+else
+    # 85% opacity
+    xprop -id "$WINDOW" -f "$PROP" 32c -set "$PROP" "$PARTIAL"
+fi

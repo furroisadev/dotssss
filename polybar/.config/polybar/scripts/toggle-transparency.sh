@@ -1,4 +1,3 @@
-```bash
 #!/bin/bash
 
 WINDOW=$(xdotool getactivewindow)
@@ -16,4 +15,3 @@ else
     xprop -id "$WINDOW" -f _NET_WM_WINDOW_OPACITY 32c \
         -set _NET_WM_WINDOW_OPACITY 4294967295
 fi
-```
